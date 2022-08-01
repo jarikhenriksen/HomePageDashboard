@@ -55,7 +55,7 @@ function getWeather() {
         const lat = position.coords.latitude; 
         const lon = position.coords.longitude;
         
-        const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${lon}`
+        const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${lon}`
 
         fetch(url)
         .then(response => {
