@@ -1,0 +1,19 @@
+#nasacalender {
+    margin: 3rem;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#nasaCalenderForm {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: auto;
+    font-weight: bold;
+}
+
+#todaysNewsHeader {
+height: 3rem;
+}

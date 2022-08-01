@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="bg-light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script type='text/javascript' src='config.js'></script>
+    </head>
+    
+        <header class="bg-primary text-light">
+
+            <div class="container-fluid row p-3  d-flex justify-content-around">
+
+                <div class="col-md-4">
+                    <h1>Welcome</h1>
+                    <div class="col-md fs-4">
+                        <span>Today's date is</span>
+                        <strong><span id="date"></span></strong>
+                        
+                    </div>
+                </div>
+                
+                <div class="col-md-3 fs-4">
+
+                    <div>
+                        <button class="btn btn-light mt-4" id="weatherButton">Click here for your local weather</button>
+                    </div>
+
+                    <div id="weatherDiv" class="d-none">
+                        <span>It's currently</span>
+                        <span id="weather"></span>
+                        <span>degrees celcius in</span>
+                        <span id="weatherCity"></span>
+                        <span id="weatherRegion"></span>
+                        <img  class="mx-auto" id="weatherImg" src="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+        </header>
+            <body class="bg-light">
+                <div class="container-fluid row">
+                    <span class="container-fluid col row justify-content-center"> <!-- this section is for news, taking up left half of page-->
+
+                        <h2 id="todaysNewsHeader" class="text-dark text-center">Here is todays news</h2>
+            
+                            <div class="card m-3 shadow-sm bg-image hover-zoom" style="width: 20rem;">
+                                <img src="..." id="urlToImage0" class="card-img-top mt-2" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-text mb-3" id="news0"> </h5>
+                                <p id="newsdesc0"></p>
+                                <a href="#" id="url0" class="btn btn-primary">Read more</a>
+                                </div>
+                            </div>
+        
+                            <div class="card m-3 shadow-sm bg-image hover-zoom" style="width: 20rem;">
+                                <img src="..." id="urlToImage1" class="card-img-top mt-2" alt="...">
+                                <div class="card-body">             
+                                <h5 class="card-text mb-3" id="news1"> </h5>
+                                <p id="newsdesc1"></p>
+                                <a href="#" id="url1" class="btn btn-primary">Read more</a>
+                                </div>
+                            </div>
+                            <div class="card m-3 shadow-sm bg-image hover-zoom" style="width: 20rem;">
+                                <img src="..." id="urlToImage2" class="card-img-top mt-2" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-text mb-3" id="news2"> </h5>
+                                <p id="newsdesc2"></p>
+                                <a href="#" id="url2" class="btn btn-primary">Read more</a>
+                                </div>
+                            </div>
+        
+                            <div class="card m-3 shadow-sm bg-image hover-zoom" style="width: 20rem;">
+                                <img src="..." id="urlToImage3" class="card-img-top mt-2" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-text mb-3" id="news3"> </h5>
+                                <p id="newsdesc3"></p>
+                                <a href="#" id="url3" class="btn btn-primary">Read more</a>
+                                </div>
+                            </div>
+                       
+                        </span>
+    
+                    <span class="container col-lg-6 mt-4 row justify-content-md-center">
+                        <h2>Nasa's picture of the day</h2>
+                        <p id="nasaPicDescription"></p>
+                        <img id="nasaPic" class="img-fluid img-thumbnail pt-2" src="..." alt="">
+                    </span>
+
+                </div>
+
+                <footer class="container-fluid bg-primary text-light">
+                    
+                </footer>
+            </body>
+         
+        <script src="script.js" async defer></script>
+ 
+</html>
