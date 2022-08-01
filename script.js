@@ -13,7 +13,7 @@ function getDate() {        //gets todays date, adds it to html page.
 function getNews() {
     const apiKey = config.newsApi
 
-    for(var i = 0; i < 4; i++) {
+    for(let i = 0; i < 4; i++) {
     fetch(`https://newsapi.org/v2/top-headlines?country=ca&apiKey=${apiKey}`)
         .then(response => {
             return response.json();
